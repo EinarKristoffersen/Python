@@ -6,7 +6,6 @@ Created on 6. sep. 2015
 
 from Constants import Constants as C
 import pygame
-#from pygame.locals import *
 pygame.init()
 
 class Button:
@@ -22,14 +21,7 @@ class Button:
         self.draw_button(C.SCREEN, C.BTN_COLOR, C.BTN_WIDTH, C.BTN_HEIGHT, self.pos.x, self.pos.y, 0)
         self.write_text(C.SCREEN, self.text, C.BTN_TEXT_COLOR, C.BTN_WIDTH, C.BTN_HEIGHT, self.pos.x, self.pos.y)
         
-    """def create_button(self, surface, color, x, y, length, height, width, text_color):
-        self.rect = pygame.Rect(x,y, length, height)
-        surface = self.draw_button(surface, color, length, height, x, y, width)
-        surface = self.write_text(surface, self.text, text_color, length, height, x, y)
-        return surface
-    """
     def write_text(self, surface, text, text_color, length, height, x, y):
-        #font_size = int(length//len(text))
         font_size = int(height) - 15
         myFont = pygame.font.SysFont("Calibri", font_size)
         myText = myFont.render(text, 1, text_color)
@@ -48,7 +40,6 @@ class Button:
             surface.blit(s, (x-i,y-i))
         pygame.draw.rect(surface, color, (x,y,length,height), 0)
         pygame.draw.rect(surface, color, (x,y,length,height), 1)
-        #pygame.draw.rect(surface, (190,190,190), (x,y,length,height), 1)  
         return surface
 
     def pressed(self, mouse):

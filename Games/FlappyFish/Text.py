@@ -1,7 +1,7 @@
 '''
-Created on 7. aug. 2015
+Created on 7. sep. 2015
 
-@author: Criblica
+@author: Einar
 '''
 
 from Vector import Vector

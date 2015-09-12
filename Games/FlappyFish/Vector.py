@@ -1,7 +1,7 @@
 '''
-Created on 12. juli 2014
+Created on 7. sep. 2015
 
-@author: Criblica
+@author: Einar
 '''
 
 import math
