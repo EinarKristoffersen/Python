@@ -4,7 +4,7 @@ Created on 4. aug. 2014
 @author: Criblica
 '''
 
-import Vector.Vector2D
+from Vector import Vector
 from Constants import Constants as C
 import pygame
 
