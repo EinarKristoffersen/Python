@@ -84,9 +84,6 @@ class Game():
         time_passed = self.clock.tick(C.FPS)
         return time_passed / 1000.0
     
-    def countdown(self, num):
-        pass
-    
     def check_for_passed_pipes(self):
         for pipe in self.pipes:
             if not pipe.passed and pipe.get_x_pos() <= C.FISH_CONSTANT_POS_X:
