@@ -166,6 +166,7 @@ class Game():
         
         self.remove_all_pipes()
         self.highscore.set_highscore_if_needed(var.score)
+        self.highscore_text.update(C.HIGHSCORE_TEXT+str(int(self.highscore.highscore)))
         
         while(var.game_over):
             time_passed_seconds = self.fps_count()
